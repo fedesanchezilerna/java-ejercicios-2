@@ -28,6 +28,11 @@ public class Ejercicio1 {
         paperSizeCalculator();
     }
 
+    /**
+     * Solicita un tamaño de papel,
+     * verifica su existencia
+     * imprime el tamaño en mm si el tamaño existe.
+     */
     private static void paperSizeCalculator() {
         System.out.print("Introduce el tamaño del papel: ");
         String paperSize = ScannerUtils.getScanner().nextLine().toUpperCase();
