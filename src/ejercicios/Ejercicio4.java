@@ -29,7 +29,7 @@ public class Ejercicio4 {
                 MENÚ
                 1: Calcular descuento
                 0: Salir
-                Elige una opción:\s""");
+                Elige una opción:""");
 
         int option = ScannerUtils.readInt();
         if (option == 1) {
@@ -43,7 +43,7 @@ public class Ejercicio4 {
     private static void mostrarDescuentos(double pOriginal) {
         for (double i = 5; i <= 100; i = i + 5) {
             double pDescuento = pOriginal - (pOriginal * (i / 100));
-            System.out.println("Descuento " + i + "%: " + pDescuento);
+            System.out.printf("Descuento %.0f%%: %.2f%n", i, pDescuento);
         }
     }
 }
