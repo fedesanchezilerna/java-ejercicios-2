@@ -21,10 +21,8 @@ public class ScannerUtils {
     /**
      * Lee un Integer de manera segura. Si el input ingresado no es un integer válido,
      * muestra al usuario que ingrese un número válido.
-     * Reads an integer from the console safely. If the input is not a valid integer,
-     * it prompts the user again until a valid integer is provided.
      *
-     * @return The integer value provided by the user.
+     * @return Integer ingresado por el usuario.
      */
     public static int readInt() {
         int number;
@@ -42,10 +40,10 @@ public class ScannerUtils {
     }
 
     /**
-     * Reads a double from the console safely. If the input is not a valid double,
-     * it prompts the user again until a valid double is provided.
+     * Lee un Double de manera segura. Si el input ingresado no es un Double válido,
+     * muestra al usuario que ingrese un número válido.
      *
-     * @return The double value provided by the user.
+     * @return Double ingresado por el usuario.
      */
     public static double readDouble() {
         double number;
@@ -55,7 +53,7 @@ public class ScannerUtils {
                 number = Double.parseDouble(input);
                 break;
             } catch (NumberFormatException e) {
-                System.out.println("Error: Entrada inválida. No es un número decimal.");
+                System.out.println("Entrada inválida. No es un número decimal.");
                 System.out.print("Por favor, introduce un número decimal: ");
             }
         }

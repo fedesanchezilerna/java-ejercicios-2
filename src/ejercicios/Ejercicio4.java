@@ -9,27 +9,20 @@
  */
 package ejercicios;
 
+import utils.Menu;
 import utils.ScannerUtils;
 
 /**
  * Pide el precio de un producto por teclado (precio sin descuento), comprueba que es
- * un número real, sino pide de nuevo el precio. Representa por consola el precio final
+ * un número real, si no pide de nuevo el precio. Representa por consola el precio final
  * si aplicamos un descuento en tanto por ciento de 5, 10, 15, 20, 25, 30, 35, 40, 45,
  * 50, 55, 60, 65, 70, 75, 80, 85, 90 y 100. Representa el resultado en dos decimales
  * como máximo.
  */
 public class Ejercicio4 {
 
-    public static void main(String[] args) {
-        calculoDescuento();
-    }
-
-    private static void calculoDescuento() {
-        System.out.println("""
-                MENÚ
-                1: Calcular descuento
-                0: Salir
-                Elige una opción:""");
+    public static void calculoDescuento() {
+        Menu.descuentosMenu();
 
         int option = ScannerUtils.readInt();
         if (option == 1) {

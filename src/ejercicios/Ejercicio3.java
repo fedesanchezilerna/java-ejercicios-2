@@ -9,6 +9,7 @@
  */
 package ejercicios;
 
+import utils.Menu;
 import utils.ScannerUtils;
 
 /**
@@ -21,19 +22,8 @@ import utils.ScannerUtils;
  */
 public class Ejercicio3 {
 
-    public static void main(String[] args) {
-        shapesDrawer();
-    }
-
-    private static void shapesDrawer() {
-        System.out.print("""
-                Elige una de las siguientes opciones:
-                1.  Cuadrado
-                2.  Pirámide
-                3.  Gráfico 2
-                4.  Tríangulo inverso.
-                
-                """);
+    public static void shapesDrawer() {
+        Menu.shapesDrawerMenu();
         int option = ScannerUtils.readInt();
 
         switch (option) {
@@ -74,6 +64,7 @@ public class Ejercicio3 {
                         ****
                         ***
                         **
+                        *
                         """);
                 break;
             default:

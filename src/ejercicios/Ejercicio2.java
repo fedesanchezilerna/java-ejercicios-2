@@ -19,11 +19,7 @@ import utils.ScannerUtils;
  */
 public class Ejercicio2 {
 
-    public static void main(String[] args) {
-        calculoAreaPerimetroCirculo();
-    }
-
-    private static void calculoAreaPerimetroCirculo() {
+    public static void calculoAreaPerimetroCirculo() {
         System.out.print("Ingresa el radio del círculo: ");
         double radio = ScannerUtils.readDouble();
 
@@ -43,6 +39,8 @@ public class Ejercicio2 {
                 double perimetro = 2 * Math.PI * radio;
                 System.out.printf("El perímetro del círculo con radio %.2f es: %.2f\n", radio, perimetro);
                 break;
+            default:
+                System.out.println("Opción inválida.");
         }
     }
 }

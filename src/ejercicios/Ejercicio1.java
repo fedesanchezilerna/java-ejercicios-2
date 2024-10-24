@@ -24,20 +24,16 @@ public class Ejercicio1 {
     private static final String UNKNOWN_SIZE_MSG = "Tamaño de papel inexistente.";
     private static final String KNOWN_SIZE_MSG = "Tamaños de papel existentes: A1 | A2 | A3 | A4 | A5 | A6 | A7 | A8";
 
-    public static void main(String[] args) {
-        paperSizeCalculator();
-    }
-
     /**
      * Solicita un tamaño de papel,
      * verifica su existencia
      * imprime el tamaño en mm si el tamaño existe.
      */
-    private static void paperSizeCalculator() {
+    public static void paperSizeCalculator() {
         System.out.print("Introduce el tamaño del papel: ");
         String paperSize = ScannerUtils.getScanner().nextLine().toUpperCase();
 
-        // Determina dimensiones basándonos en el tamaño
+        // Determina las dimensiones según el tamaño de papel
         switch (paperSize) {
             case "A1":
                 System.out.println("El tamaño del papel " + paperSize + " es: " + A1_SIZE);
