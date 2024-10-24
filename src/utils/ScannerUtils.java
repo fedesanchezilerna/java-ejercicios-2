@@ -32,7 +32,7 @@ public class ScannerUtils {
                 number = Integer.parseInt(input);
                 break;
             } catch (NumberFormatException e) {
-                System.out.println("Error: Entrada inválida. No es un número entero.");
+                System.out.println("Entrada inválida. No es un número entero.");
                 System.out.print("Por favor, introduce un número entero: ");
             }
         }
